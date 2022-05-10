@@ -20,6 +20,7 @@
     "enquirer": "^2.3.6"
   },
   "devDependencies": {
-    "eslint": "^8.15.0"
+    "eslint": "^8.15.0",
+    "flow-bin": "^0.177.0"
   }
 }
