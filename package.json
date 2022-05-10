@@ -11,7 +11,7 @@
   "repository": "https://github.com/michaelmior/anylist-cli",
   "bugs": "https://github.com/michaelmior/anylist-cli/issues",
   "bin": {
-    "anylist": "./cli.js"
+    "anylist": "./src/cli.js"
   },
   "lint-staged": {
     "*.js": [
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "flow": "flow check .",
-    "lint": "node_modules/.bin/prettier --check *.{js,json} && eslint --ext .js . && npmPkgJsonLint -q . && pkg-ok"
+    "lint": "prettier --check src/**/*.js && eslint --ext .js . && npmPkgJsonLint -q . && pkg-ok"
   },
   "dependencies": {
     "anylist": "^0.2.0",
