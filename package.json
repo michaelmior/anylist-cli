@@ -11,7 +11,7 @@
   "repository": "https://github.com/michaelmior/anylist-cli",
   "bugs": "https://github.com/michaelmior/anylist-cli/issues",
   "bin": {
-    "anylist": "./bin/cli"
+    "anylist": "./cli"
   },
   "dependencies": {
     "anylist": "^0.2.0",
