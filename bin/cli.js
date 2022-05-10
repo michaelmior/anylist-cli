@@ -84,6 +84,19 @@ async function main() {
       lists.forEach((l) => console.log(l.name));
     });
 
+  program.command('uncheck-all')
+    .argument('<list>')
+    .action(async (listName) => {
+      any = await loadAny();
+      await any.getLists();
+      const list = any.getListByName(listName);
+      if (list) {
+        list.uncheckAll();
+      } else {
+        console.error('List not found');
+      }
+    });
+
   await program.parseAsync();
 
   if (any) {
