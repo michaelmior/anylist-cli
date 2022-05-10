@@ -64,6 +64,21 @@ async function main() {
 
   let any = null;
 
+  program.command('add-item')
+    .argument('<list>')
+    .argument('<item>')
+    .action(async (listName, itemName) => {
+      any = await loadAny();
+      await any.getLists();
+      const list = any.getListByName(listName);
+      if (list) {
+        const item = any.createItem({name: itemName});
+        await list.addItem(item);
+      } else {
+        console.error('List not found');
+      }
+    });
+
   program.command('items')
     .argument('<list>')
     .action(async (listName) => {
