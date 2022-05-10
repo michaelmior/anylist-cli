@@ -64,6 +64,19 @@ async function main() {
 
   let any = null;
 
+  program.command('items')
+    .argument('<list>')
+    .action(async (listName) => {
+      any = await loadAny();
+      await any.getLists();
+      const list = any.getListByName(listName);
+      if (list) {
+        list.items.forEach((i) => console.log(i.name));
+      } else {
+        console.error('List not found');
+      }
+    });
+
   program.command('lists')
     .action(async () => {
       any = await loadAny();
