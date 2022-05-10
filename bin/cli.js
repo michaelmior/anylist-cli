@@ -72,8 +72,12 @@ async function main() {
       await any.getLists();
       const list = any.getListByName(listName);
       if (list) {
-        const item = any.createItem({name: itemName});
-        await list.addItem(item);
+        if (list.getItemByName(itemName)) {
+          console.error('Item already exists');
+        } else {
+          const item = any.createItem({name: itemName});
+          await list.addItem(item);
+        }
       } else {
         console.error('List not found');
       }
