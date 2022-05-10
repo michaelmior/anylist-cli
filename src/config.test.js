@@ -1,5 +1,9 @@
-const {cosmiconfigSync} = require('cosmiconfig');
 const mock = require('mock-fs');
+const {cosmiconfigSync} = require('cosmiconfig');
+
+// Mock enquirer
+jest.mock('enquirer', () => {return {prompt: jest.fn()}; });
+const {prompt} = require('enquirer');
 
 const path = require('path');
 
@@ -20,4 +24,22 @@ test('correct configuration can be loaded from file', async () => {
   expect(config.password).toBe('password');
 
   mock.restore();
+});
+
+test('users can be prompted for input with no config file', async () => {
+  // Provide responses to the prompts
+  prompt.mockReturnValue({email: 'bar@example.com', password: 'password2'});
+
+  // Trigger lazy module loading
+  cosmiconfigSync('').search();
+
+  // Start mocking the file system
+  mock();
+
+  const config = await getConfig();
+  expect(config.email).toBe('bar@example.com');
+  expect(config.password).toBe('password2');
+
+  mock.restore();
+  jest.unmock('enquirer');
 });
