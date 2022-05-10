@@ -25,7 +25,7 @@
     ]
   },
   "scripts": {
-    "flow": "flow check ./*.js",
+    "flow": "flow check .",
     "lint": "node_modules/.bin/prettier --check *.{js,json} && eslint --ext .js . && npmPkgJsonLint -q . && pkg-ok"
   },
   "dependencies": {
