@@ -13,7 +13,7 @@ async function loadAny() {
   const config = await getConfig();
   const any = new AnyList({
     email: config.email,
-    password: config.password
+    password: config.password,
   });
   await any.login();
   return any;
@@ -38,13 +38,13 @@ async function writeConfig() {
     {
       type: 'input',
       name: 'email',
-      message: 'Email'
+      message: 'Email',
     },
     {
       type: 'password',
       name: 'password',
-      message: 'Password'
-    }
+      message: 'Password',
+    },
   ];
   let config = await prompt(questions);
 
@@ -58,13 +58,12 @@ async function writeConfig() {
 async function main() {
   const pkgJson = require('../package.json');
   const program = new Command();
-  program
-    .name(pkgJson.name)
-    .version(pkgJson.version);
+  program.name(pkgJson.name).version(pkgJson.version);
 
   let any = null;
 
-  program.command('add-item')
+  program
+    .command('add-item')
     .argument('<list>')
     .argument('<item>')
     .action(async (listName, itemName) => {
@@ -83,7 +82,8 @@ async function main() {
       }
     });
 
-  program.command('items')
+  program
+    .command('items')
     .argument('<list>')
     .action(async (listName) => {
       any = await loadAny();
@@ -96,14 +96,14 @@ async function main() {
       }
     });
 
-  program.command('lists')
-    .action(async () => {
-      any = await loadAny();
-      const lists = await any.getLists();
-      lists.forEach((l) => console.log(l.name));
-    });
+  program.command('lists').action(async () => {
+    any = await loadAny();
+    const lists = await any.getLists();
+    lists.forEach((l) => console.log(l.name));
+  });
 
-  program.command('uncheck-all')
+  program
+    .command('uncheck-all')
     .argument('<list>')
     .action(async (listName) => {
       any = await loadAny();
