@@ -1,0 +1,24 @@
+{
+  "name": "anylist-cli",
+  "version": "0.0.1",
+  "author": {
+    "name": "Michael Mior",
+    "email": "michael.mior@gmail.com",
+    "url": "https://michael.mior.ca/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/michaelmior/anylist-cli",
+  "repository": "https://github.com/michaelmior/anylist-cli",
+  "bugs": "https://github.com/michaelmior/anylist-cli/issues",
+  "bin": {
+    "anylist": "./bin/cli"
+  },
+  "dependencies": {
+    "anylist": "^0.2.0",
+    "cosmiconfig": "^7.0.1",
+    "enquirer": "^2.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  }
+}
