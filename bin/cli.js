@@ -1,4 +1,5 @@
 const AnyList = require('anylist');
+const {Command} = require('commander');
 const {cosmiconfig} = require('cosmiconfig');
 const {prompt} = require('enquirer');
 
@@ -8,7 +9,8 @@ const {promisify} = require('util');
 
 const writeFileAsync = promisify(fs.writeFile);
 
-async function loadAny(config) {
+async function loadAny() {
+  const config = await getConfig();
   const any = new AnyList({
     email: config.email,
     password: config.password
@@ -54,11 +56,24 @@ async function writeConfig() {
 }
 
 async function main() {
-  let config = await getConfig();
-  let any = await loadAny(config);
+  const pkgJson = require('../package.json');
+  const program = new Command();
+  program
+    .name(pkgJson.name)
+    .version(pkgJson.version);
+
+  let any = null;
+
+  program.command('lists')
+    .action(async () => {
+      any = await loadAny();
+      const lists = await any.getLists();
+      lists.forEach((l) => console.log(l.name));
+    });
+
+  await program.parseAsync();
+
   if (any) {
-    const lists = await any.getLists();
-    console.log(lists.map((l) => l.name));
     any.teardown();
   }
 }
