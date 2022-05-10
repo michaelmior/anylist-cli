@@ -2,7 +2,9 @@ const mock = require('mock-fs');
 const {cosmiconfigSync} = require('cosmiconfig');
 
 // Mock enquirer
-jest.mock('enquirer', () => {return {prompt: jest.fn()}; });
+jest.mock('enquirer', () => {
+  return {prompt: jest.fn()};
+});
 const {prompt} = require('enquirer');
 
 const path = require('path');
@@ -18,7 +20,7 @@ test('correct configuration can be loaded from file', async () => {
 
   // Create a mock configuration
   mock({
-    [configPath]: '{"email": "foo@example.com", "password": "password"}'
+    [configPath]: '{"email": "foo@example.com", "password": "password"}',
   });
 
   const config = await getConfig();
