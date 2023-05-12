@@ -47,7 +47,7 @@
     "flow-bin": "^0.206.0",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
-    "lint-staged": "^13.2.1",
+    "lint-staged": "^13.2.2",
     "mock-fs": "^5.2.0",
     "npm-package-json-lint": "^6.4.0",
     "npm-package-json-lint-config-default": "^5.0.0",
