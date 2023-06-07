@@ -909,10 +909,10 @@ ansi-styles@^6.0.0:
   resolved "https://registry.npmmirror.com/ansi-styles/-/ansi-styles-6.1.0.tgz#87313c102b8118abd57371afab34618bf7350ed3"
   integrity sha512-VbqNsoz55SYGczauuup0MFUyXNQviSpFTj1RQtFzmQLk18qbVSpTFFGMT293rmDaQuKCT6InmbuEyUne4mTuxQ==
 
-anylist@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmmirror.com/anylist/-/anylist-0.2.0.tgz#6a1aa6fc2bd4ee8691b8f9763a85bcb6842f2164"
-  integrity sha512-XmORncmIIkCe7Qc4dRfv8racaw6qj3HYQUIOgGnFkVlH58bBVGA2MbsUyC3DP5wEX/rte0IVbOYLJfTXioimBQ==
+anylist@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/anylist/-/anylist-0.4.0.tgz#fbb4335c268083e1ba414b0bc1383a18775694e2"
+  integrity sha512-JTMEVbQnBe735snglXv9w5Wka0VhpxEe1eM1mkeAi/KldZfrxwMQGgP52lXfK8YrRs5gXtLCr11nFjXNY3Vuhw==
   dependencies:
     form-data "^3.0.0"
     got "^10.3.0"
