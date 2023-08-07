@@ -36,7 +36,7 @@
     ]
   },
   "dependencies": {
-    "anylist": "^0.5.0",
+    "anylist": "^0.5.1",
     "commander": "^11.0.0",
     "cosmiconfig": "^8.2.0",
     "enquirer": "^2.4.1"
