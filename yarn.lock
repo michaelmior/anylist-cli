@@ -1825,10 +1825,10 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flow-bin@^0.218.1:
-  version "0.218.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.218.1.tgz#2d6c14509db57b3b3ab609cc87bef44faf2970db"
-  integrity sha512-D0479Oxu6HWCBiALCTjf5RF99FkPODhbDQnLDK4f0FGS+L3+XVqFPZPdzOzWwe2k5jAWCfARLVjqKVa6brAgtg==
+flow-bin@^0.219.3:
+  version "0.219.3"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.219.3.tgz#a3a26d27c726c7e20477f394570ec6b1fb41fbe0"
+  integrity sha512-5O+G8pXqu0UClXLhTj2g/ZdNCQo4odYKs/6VHCnhOcvATrJIJcOJuW7WgjXMsGuV4aVeBmeFO93isE4cop9K/Q==
 
 forever-agent@~0.6.1:
   version "0.6.1"
