@@ -993,10 +993,10 @@ ansi-styles@^6.2.1:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.2.1.tgz#0e62320cf99c21afff3b3012192546aacbfb05c5"
   integrity sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==
 
-anylist@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/anylist/-/anylist-0.8.1.tgz#1e591c75aed70aa56d89e3153067a841156dc888"
-  integrity sha512-Emajnq13Py9fk/HCP5tXxQeI0aBUyAjTzmb+DqAFAMHLw4uZlfzDe8yfS4memOUVsVE5yVfUSoduUG5ZJMg0tw==
+anylist@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/anylist/-/anylist-0.8.2.tgz#65f94047578597167b8f55c352a284da8ec308ca"
+  integrity sha512-TYF9y+UmqxHk+6a5V1sInDzIGxRqTO5RaesYV3rFdM+26fNdWmpfnA2uM9tyXQyw+mzcIB4nAPTIHY+w0tRDKg==
   dependencies:
     form-data "^3.0.0"
     got "^10.3.0"
