@@ -27,7 +27,7 @@
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "flow": "flow check .",
-    "lint": "prettier --check src/**/*.js && eslint --ext .js . && npmPkgJsonLint -q . && pkg-ok",
+    "lint": "prettier --check src/**/*.js && eslint && npmPkgJsonLint -q . && pkg-ok",
     "test": "jest"
   },
   "jest": {
