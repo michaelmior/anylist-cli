@@ -3123,10 +3123,10 @@ normalize-url@^6.0.1:
   resolved "https://registry.npmmirror.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-npm-package-json-lint-config-default@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/npm-package-json-lint-config-default/-/npm-package-json-lint-config-default-6.0.0.tgz#840dff8ec9bf0db150f68d5415449400fa167da0"
-  integrity sha512-Ek3EcbMEjvGSxEywxNF2tTHuzvtaUH48Z7sljmeSejANMSpE1ssIN0oOG/Tlpc+U/P7ElfsOySIjijjmEnvMGw==
+npm-package-json-lint-config-default@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/npm-package-json-lint-config-default/-/npm-package-json-lint-config-default-7.0.0.tgz#1476c2819add6e86c8349b2c486eb42c21524fb7"
+  integrity sha512-Fc8N037pq3yslJbi3cBjMIbj/rQb2MDOUUM5DuFyET/ZQVCAL1+0/AF52pJYgu4vMoLW6pKpNhcKHDq0Tg2L+g==
 
 npm-package-json-lint@^7.1.0:
   version "7.1.0"
