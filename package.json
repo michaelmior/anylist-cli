@@ -44,7 +44,7 @@
   "devDependencies": {
     "coveralls": "^3.1.1",
     "eslint": "^9.5.0",
-    "flow-bin": "^0.238.1",
+    "flow-bin": "^0.238.2",
     "husky": "^9.0.11",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.7",
