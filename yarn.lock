@@ -1033,10 +1033,10 @@ ansi-styles@^6.2.1:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.2.1.tgz#0e62320cf99c21afff3b3012192546aacbfb05c5"
   integrity sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==
 
-anylist@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/anylist/-/anylist-0.8.3.tgz#1bdd0b7b7dcb46bcf637d4fb58460dda1b7550c1"
-  integrity sha512-wQL1nk86jp9KYlab/wSaVWWlQzqtBec6u+5EUv7eGf1MuhVASCKAULpqEl93lNfh8LR4+VYuOQL+NfQaaS40Qw==
+anylist@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/anylist/-/anylist-0.8.4.tgz#d22e9c92062dd6b4a54ad704f8eb94ea59041548"
+  integrity sha512-3WDKFqRyyWSf1riG1UZ6W9KnX+EOZlqhOCo04FGhYaySEYFCSNHE0JL7CzJyGF+Rmfj3KJjYMgingr10bivTXg==
   dependencies:
     form-data "^3.0.0"
     got "^10.3.0"
