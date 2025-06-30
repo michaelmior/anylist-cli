@@ -1923,10 +1923,10 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
 
-flow-bin@^0.274.1:
-  version "0.274.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.274.1.tgz#a3b8ec48523d4dacc315ea497543e6f4f3b51ad2"
-  integrity sha512-m+ldUZPCd6qJ4UXnUeLd/PX95OaeqMc3x36GoUkj6u1KOa/JwwZKxfFBb8JPA2SACg1QXeSyp4G11O51NfXKIQ==
+flow-bin@^0.274.2:
+  version "0.274.2"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.274.2.tgz#79cff569aab38eb04f6b1e64b899c932a51444a4"
+  integrity sha512-vTF+5hiC5qymweFKj7xs5ABlDqMWbB2fPkYC4MI32m652dFYsq/zvEVNc2M09udwAzplLcMIK2O9VswPfd8Isw==
 
 forever-agent@~0.6.1:
   version "0.6.1"
